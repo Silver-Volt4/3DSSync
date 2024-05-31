@@ -23,6 +23,8 @@ download_all() {
         NEWEST=$(date -r $NEWEST_FILE "+%T %F")
         echo $NEWEST > ../last_timestamp.txt
     fi
+
+    chmod +x DCIM/*
     cd ..
 }
 
@@ -50,3 +52,4 @@ mkdir -p dl
 download_all
 transform_all
 rm -rf dl
+./process_batch.sh
