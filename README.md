@@ -1,5 +1,5 @@
 # 3DSSync
-3DSSync is a Unix script that can copy 3DS photos using FTP.
+3DSSync is a shell script that can copy 3DS photos using FTP.
 
 Right now it's a bit hacky, contributions are welcome.
 
