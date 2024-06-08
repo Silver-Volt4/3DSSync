@@ -19,3 +19,4 @@ Currently, there is no way to customise what 3DSSync copies. The currently proce
 - Download [this folder](https://github.com/xtomasnemec/3DSSync/tree/master/scripts)
 - Run download.bat
 - Navigate to your WSL home/3DSSync and edit `get_ip_address.sh`, `get_login_parameters.sh` and `process_batch.sh`
+- Run 3DSSync.bat
