@@ -6,7 +6,7 @@ Right now it's a bit hacky, contributions are welcome.
 # Requirements
 - A Windows 10/11 install
 
-- WSL2 running Ubuntu installed [with the password promt disabled](https://www.youtube.com/watch?v=a2sDIbBO8Tw) ([Install Guide](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package))
+- WSL2 running a Debian based distro installed [with the password promt disabled](https://www.youtube.com/watch?v=a2sDIbBO8Tw) ([Install Guide](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package))
 
 - A Modded 3DS with [FTPD](https://github.com/mtheall/ftpd) installed
 
@@ -18,3 +18,4 @@ Currently, there is no way to customise what 3DSSync copies. The currently proce
 ## How to Run
 - Download [this folder](https://github.com/xtomasnemec/3DSSync/tree/master/scripts)
 - Run download.bat
+- Navigate to your WSL home/3DSSync and edit `get_ip_address.sh`, `get_login_parameters.sh` and `process_batch.sh`
