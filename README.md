@@ -11,8 +11,10 @@ Right now it's a bit hacky, contributions are welcome.
 - A Modded 3DS with [FTPD](https://github.com/mtheall/ftpd) installed
 
 # How to use
-3DSSync is supposed to be "unixy" in that you can customise it. There are three scripts that you must supply yourself to make 3DSSync work. These are stored in `templates/`, copy them to the root of the repository (they will be ignored by git). What you do with them is described in each of the files.
+3DSSync is supposed to be "unixy" in that you can customise it. There are three scripts that you must edit yourself (these are: `get_ip_address.sh`, `get_login_parameters.sh` and `process_batch.sh`) to make 3DSSync work. What you do with them is described in each of the files.
 
 Currently, there is no way to customise what 3DSSync copies. The currently processed folders are `/DCIM/` (3DS Camera and in-game screenshots) and `/luma/screenshots/` (Luma3DS screenshots). Luma screenshots are flattened into a single image and converted to PNG for convenience.
 
-Additionally, you must have imagemagick convert and lftp installed on your WSL.
+## How to Run
+- Download [this folder](https://github.com/xtomasnemec/3DSSync/tree/master/scripts)
+- Run download.bat
