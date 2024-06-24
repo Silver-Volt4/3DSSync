@@ -2,12 +2,12 @@ CALL echo off
 CALL pushd \\wsl.localhost\Ubuntu\home
 call wsl.exe echo WSL is working correctly!
 CALL wsl.exe cd $HOME
-CALL wsl.exe sudo apt update
-CALL wsl.exe sudo apt upgrade
-CALL wsl.exe sudo apt install wget
-CALL wsl.exe sudo apt install git
-CALL wsl.exe sudo apt install imagemagick
-CALL wsl.exe sudo apt install lftp
+CALL wsl.exe sudo apt update -y
+CALL wsl.exe sudo apt upgrade -y
+CALL wsl.exe sudo apt install wget -y
+CALL wsl.exe sudo apt install git -y
+CALL wsl.exe sudo apt install imagemagick -y
+CALL wsl.exe sudo apt install lftp -y
 CALL wsl.exe git clone https://github.com/Silver-Volt4/3DSSync
 CALL wsl.exe wget https://raw.githubusercontent.com/Silver-Volt4/3DSSync/master/template/get_ip_address.sh
 CALL wsl.exe mv -f get_ip_address.sh 3DSSync
